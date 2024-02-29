@@ -39,6 +39,7 @@ class conan2opencvtestRecipe(ConanFile):
         cmake = CMake(self)
         cmake.install()
 
-    
+    def requirements(self):
+        self.requires("zlib/1.3.1", force=True)
+        self.requires("cmake/3.28.1", force=True)
 
-    
