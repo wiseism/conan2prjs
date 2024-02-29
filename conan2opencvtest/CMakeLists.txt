@@ -3,7 +3,9 @@ project(conan2opencvtest CXX)
 
 
 
-add_executable(conan2opencvtest src/conan2opencvtest.cpp src/main.cpp)
+add_executable(conan2opencvtest src/conan2opencvtest.cpp src/main.cpp
+        src/opencvtest.cpp
+        src/opencvtest.h)
 
 
 

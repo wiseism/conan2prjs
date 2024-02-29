@@ -1,0 +1,9 @@
+//
+// Created by edida on 2024/2/29.
+//
+
+#ifndef CONAN2OPENCVTEST_OPENCVTEST_H
+#define CONAN2OPENCVTEST_OPENCVTEST_H
+
+int make_opencv();
+#endif //CONAN2OPENCVTEST_OPENCVTEST_H

@@ -19,6 +19,7 @@ class conan2opencvtestRecipe(ConanFile):
 
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*"
+    requires = "opencv/4.5.5"
 
     def layout(self):
         cmake_layout(self)
