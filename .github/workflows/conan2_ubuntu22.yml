@@ -34,5 +34,5 @@ jobs:
         mkdir build
         cd build
         sudo conan install -u ../ --build=missing
-        cmake .. -DCMAKE_PREFIX_PATH=../ -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+        cmake .. -DCMAKE_PREFIX_PATH=../ -DCMAKE_TOOLCHAIN_FILE=./Release/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
         cmake --build .
