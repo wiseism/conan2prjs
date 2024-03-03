@@ -21,9 +21,6 @@ class conan2opencvtestRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*"
     requires = "opencv/4.5.5"
 
-    def layout(self):
-        cmake_layout(self)
-
     def generate(self):
         deps = CMakeDeps(self)
         deps.generate()
