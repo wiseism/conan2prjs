@@ -1,1 +1,0 @@
-. "/Users/ibqo/Develop/git/github/conan2prjs/conan2zlibtest/deactivate_conanbuildenv-release-x86_64.sh"

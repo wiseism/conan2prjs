@@ -38,4 +38,4 @@ build/
 .DS_Store
 .idea
 conan2opencvtest/.idea
-conan2opencvtest/cmake-build*
+cmake-build*

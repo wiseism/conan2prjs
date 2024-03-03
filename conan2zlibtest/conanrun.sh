@@ -1,1 +1,0 @@
-. "/Users/ibqo/Develop/git/github/conan2prjs/conan2zlibtest/conanrunenv-release-x86_64.sh"
