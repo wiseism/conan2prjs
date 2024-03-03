@@ -29,10 +29,17 @@ jobs:
 
     - name: conan build
       run: |
+        wget --no-check-certificate https://github.com/Kitware/CMake/releases/download/v3.27.9/cmake-3.27.9-linux-x86_64.tar.gz
+        tar -xvf cmake-3.27.9-linux-x86_64.tar.gz > /dev/null
+        mv cmake-3.27.9-linux-x86_64 cmake-install
+        pwd_path=$(pwd)
+        PATH=${pwd_path}/cmake-install:${pwd_path}/cmake-install/bin:$PATH
+        cmake --version
         cd conan2opencvtest
-        rm -rf build
-        mkdir build
-        cd build
         sudo conan install -u ../ --build=missing
-        cmake .. -DCMAKE_PREFIX_PATH=../ -DCMAKE_TOOLCHAIN_FILE=./Release/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+        cmake --preset conan-release
+        cmake --build .
+        cd conan2grpctest
+        sudo conan install -u ../ --build=missing
+        cmake --preset conan-release
         cmake --build .
