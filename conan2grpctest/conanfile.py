@@ -21,7 +21,7 @@ class conan2grpctestRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*"
 
     def requirements(self):
-        self.requires("grpc/1.54.3")
+        self.requires("grpc/1.48.4")
 
     def layout(self):
         cmake_layout(self)

@@ -1,9 +1,0 @@
-{
-    "version": 4,
-    "vendor": {
-        "conan": {}
-    },
-    "include": [
-        "/Users/ibqo/Develop/git/github/conan2prjs/conan2pocotest/build/Release/generators/CMakePresets.json"
-    ]
-}
