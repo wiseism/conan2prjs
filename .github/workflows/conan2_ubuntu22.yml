@@ -36,10 +36,11 @@ jobs:
         PATH=${pwd_path}/cmake-install:${pwd_path}/cmake-install/bin:$PATH
         cmake --version
         cd conan2opencvtest
-        sudo conan install -u ../ --build=missing
+        sudo conan install -u ./ --build=missing
         cmake --preset conan-release
         cmake --build .
         cd conan2grpctest
-        sudo conan install -u ../ --build=missing
+        sudo conan install -u ./ --build=missing
         cmake --preset conan-release
+        cd build/Release/
         cmake --build .
