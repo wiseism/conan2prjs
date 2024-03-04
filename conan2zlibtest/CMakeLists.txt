@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(conan2zlibtest C)
 
-list(PREPEND CMAKE_LIBRARY_PATH "/Users/ibqo/.conan2/p/b/zlib2bc7cc9c6d881/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/Users/ibqo/.conan2/p/b/zlib2bc7cc9c6d881/p/include")
 find_package(ZLIB REQUIRED)
 add_executable(${PROJECT_NAME} src/main.c)
 add_executable(complete_main src/complete_main.c)

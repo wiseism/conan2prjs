@@ -35,7 +35,7 @@ D:\dev_tools\Conan\conan\conan.exe install asio/1.28.0 --install-folder=.
 
 
 cd .\build
-cmake --preset conan-default
+cmake --preset conan-default ../
 cmake  "D:\git\github\conan2prjs\conan2zlibtest"
 .\generators\conanbuild.bat
 cmake --build .
