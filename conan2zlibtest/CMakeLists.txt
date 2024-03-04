@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(conan2zlibtest C)
-
 find_package(ZLIB REQUIRED)
+
 add_executable(${PROJECT_NAME} src/main.c)
 add_executable(complete_main src/complete_main.c)
 

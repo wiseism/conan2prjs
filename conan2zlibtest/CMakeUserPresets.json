@@ -4,6 +4,6 @@
         "conan": {}
     },
     "include": [
-        "D:\\git\\github\\conan2prjs\\conan2zlibtest\\build\\generators\\CMakePresets.json"
+        "/Users/ibqo/Develop/git/github/conan2prjs/conan2zlibtest/cmake-build-debug/conan/build/Debug/generators/CMakePresets.json"
     ]
 }

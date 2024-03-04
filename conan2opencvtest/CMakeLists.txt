@@ -6,7 +6,7 @@ find_package(OpenCV REQUIRED)
 add_executable(${PROJECT_NAME} src/conan2opencvtest.cpp src/main.cpp
         src/opencvtest.cpp)
 
-target_link_libraries(${PROJECT_NAME} OpenCV::OpenCV)
+target_link_libraries(${PROJECT_NAME} opencv::opencv)
 
 
 install(TARGETS ${PROJECT_NAME} DESTINATION "."
