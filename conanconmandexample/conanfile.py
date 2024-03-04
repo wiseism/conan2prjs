@@ -13,9 +13,18 @@ class ConanexampleConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
-    generators = "cmake"
+    generators = "CMakeToolchain", "CMakeDeps"
     exports_sources = "src/*"
     requires = "gtest/1.11.0"
+
+    def layout(self):
+        cmake_layout(self)
+
+    # def generate(self):
+    #     deps = CMakeDeps(self)
+    #     deps.generate()
+    #     tc = CMakeToolchain(self)
+    #     tc.generate()
 
     def generate(self):
         openssl = self.dependencies["gtest"]

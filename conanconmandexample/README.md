@@ -158,3 +158,11 @@ ERROR: Conflict in grpc/1.48.0:
 
 解决办法
 在conanfile.py中定义库的版本
+
+##  windows编译
+cd build
+conan install ../ --build=missing
+cd ../
+cmake --preset conan-default
+cd build
+cmake --build .
