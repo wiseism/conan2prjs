@@ -1,6 +1,7 @@
 #include "conan2asiotest.h"
 #include <vector>
 #include <string>
+#include <asio.hpp>
 
 int main() {
     conan2asiotest();
