@@ -38,13 +38,23 @@ jobs:
         pwd_path=$(pwd)
         PATH=${pwd_path}/cmake-install:${pwd_path}/cmake-install/bin:$PATH
         cmake --version
-        cd conan2opencvtest
+        cd conan2asiotest
         sudo conan install -u ./ --build=missing
         sudo rm -rf build
         conan install -u ./ --build=missing
         cmake --preset conan-release
+        cd build/Release/
         cmake --build .
-        cd conan2grpctest
+        cd ../../
+        cd conan2pocotest
+        sudo conan install -u ./ --build=missing
+        sudo rm -rf build
+        conan install -u ./ --build=missing
+        cmake --preset conan-release
+        cd build/Release/
+        cmake --build .
+        cd ../../
+        cd conan2zlibtest
         sudo conan install -u ./ --build=missing
         sudo rm -rf build
         conan install -u ./ --build=missing
