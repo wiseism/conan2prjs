@@ -45,7 +45,7 @@ jobs:
         cmake --preset conan-release
         cd build/Release/
         cmake --build .
-        cd ../../
+        cd ../../../
         cd conan2pocotest
         sudo conan install -u ./ --build=missing
         sudo rm -rf build
@@ -53,7 +53,7 @@ jobs:
         cmake --preset conan-release
         cd build/Release/
         cmake --build .
-        cd ../../
+        cd ../../../
         cd conan2zlibtest
         sudo conan install -u ./ --build=missing
         sudo rm -rf build
