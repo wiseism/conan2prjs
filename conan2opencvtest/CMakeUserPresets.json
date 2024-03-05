@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "D:/git/github/conan2prjs/conan2opencvtest/cmake-build-debug/conan\\CMakePresets.json"
+    ]
+}

@@ -20,7 +20,7 @@ class conan2pocotestRecipe(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*"
     def requirements(self):
-        self.requires("poco/1.13.2")
+        self.requires("poco/1.11.3")
 
     def layout(self):
         cmake_layout(self)
