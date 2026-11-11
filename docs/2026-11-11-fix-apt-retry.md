@@ -15,4 +15,4 @@
 | Run | 结果 |
 |---|---|
 | 42443662425 两次 attempt | failure — DNS 抖动 |
-| 待 re-run | 待填 |
+| 43122997537 (efd6202) | ✅ success |
